@@ -3,6 +3,7 @@ body {
   font-family: 'Helvetica', sans-serif;
   color: black;
   margin: 0;
+  line-height: 1.4rem;
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
 
 .flex {
   display: flex;
+  justify-content: center;
 }
 
 /* Hero Image */
@@ -85,20 +87,64 @@ nav ul li:last-child {
 /* Icon Section */
 
 .icons {
-  display: flex;
   min-height: 8rem;
   margin-top: 3rem;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  align-items: top;
 }
 
 .icon {
-  display: block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 30%;
+  height: 8rem;
+  margin: 3rem 0;
+  display: flex;
+  text-align: center;
+  line-height: 1.4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paper {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.ruler {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.truck {
+  width: 5rem;
+  margin-bottom: 1rem;
 }
 
 /* Philosophy & Appointments */
+
+.item {
+  width: 35%;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2.5rem;
+}
+
+.section-title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 /* Footer */
 
