@@ -12,6 +12,17 @@ h1 {
   text-transform: uppercase;
 }
 
+/* Container */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
 /* Hero Image */
 
 .hero {
@@ -71,15 +82,35 @@ nav ul li:last-child {
   padding-right: 1rem;
 }
 
-/* Classes */
+/* Icon Section */
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+.icons {
+  display: flex;
+  min-height: 8rem;
+  margin-top: 3rem;
+  justify-content: space-around;
 }
 
-.flex {
-  display: flex;
+.icon {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Philosophy & Appointments */
+
+/* Footer */
+
+footer {
+  background-color: azure;
+  text-align: left;
+  padding: 4rem;
+  margin-top: 4rem;
+}
+
+footer .logo {
+  margin-left: 3rem;
 }
 
 /* Media Queries */
