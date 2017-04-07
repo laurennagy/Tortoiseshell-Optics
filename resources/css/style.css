@@ -31,7 +31,7 @@ h1 {
   background-image: url('../../resources/img/glasses-bg.png');
   background-position: center;
   background-size: cover;
-  min-height: 30rem;
+  height: 30rem;
   padding-top: 1rem;
 }
 
@@ -40,12 +40,11 @@ h1 {
   margin-right: -2rem;
   display: flex;
   justify-content: flex-end;
-  text-align: right;
 }
 
 .banner h1 {
   background-color: white;
-  padding: 1.5rem 5rem;
+  padding: 2.5rem 5rem;
 
 }
 
@@ -72,6 +71,10 @@ nav ul li {
 
 nav ul li:last-child {
   padding-right: 0;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .logo {
@@ -130,8 +133,8 @@ nav ul li:last-child {
 .item {
   width: 35%;
   display: inline-block;
-  flex-direction: column;
   justify-content: space-between;
+  vertical-align: top;
   margin: 0 2.5rem;
 }
 
@@ -160,10 +163,127 @@ footer .logo {
 }
 
 /* Media Queries */
-@media only screen and () {
+@media only screen and (max-width: 1024px) {
+
+  .hero {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    margin-top: 5rem;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .banner h1 {
+    font-size: 1.33rem;
+    margin: 0.75rem 4rem;
+    line-height: 1rem;
+  }
 
 }
 
-@media only screen and () {
+@media only screen and (max-width: 700px) {
+
+  .body  {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 17rem;
+    background-position: 20%;
+  }
+
+  .banner {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 12rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .banner h1 {
+    padding: 1rem 0;
+    line-height: 1rem;
+  }
+
+  .mobile-nav {
+    display: list-item;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .icons {
+    margin: 3.77rem 0;
+    justify-content: center;
+  }
+
+  .icon {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin-top: 1.54rem;
+    margin-bottom: 0;
+  }
+
+  .item-content {
+    margin-bottom: 4rem;
+    padding: 10px;
+  }
+
+  .item {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .item p {
+    font-size: 0.77rem;
+    line-height: 1rem;
+  }
+
+  .section-title {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer .logo {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  footer .span {
+    display: none;
+  }
 
 }
